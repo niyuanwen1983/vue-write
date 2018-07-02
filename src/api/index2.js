@@ -24,6 +24,7 @@ export function getdata() {
 
 //获取图表数据
 export function getWords() {
-  axios.defaults.baseURL = 'http://localhost:8081';
+  //axios.defaults.baseURL = 'http://localhost:8081';
+  axios.defaults.baseURL = 'https://niyuanwen1983.github.io/vue-write';
   return axios.get('/src/api/words.json');
 }
